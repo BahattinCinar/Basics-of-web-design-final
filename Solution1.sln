@@ -5,8 +5,21 @@ VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{965E23A4-400A-4075-BDAB-5107FEBA2756}"
 	ProjectSection(SolutionItems) = preProject
+		celest.html = celest.html
+		dis_oyun.html = dis_oyun.html
+		guess.html = guess.html
+		ic_mekan.html = ic_mekan.html
+		java.js = java.js
 		Main_pain.html = Main_pain.html
+		masa.html = masa.html
+		monopoly.html = monopoly.html
+		no_man_sky.html = no_man_sky.html
+		red_dead1.html = red_dead1.html
 		StyleSheet1.css = StyleSheet1.css
+		tabu.html = tabu.html
+		ton.html = ton.html
+		video_oyunlari.html = video_oyunlari.html
+		witcher3.html = witcher3.html
 	EndProjectSection
 EndProject
 Global
