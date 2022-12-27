@@ -52,6 +52,7 @@
     padding: 15px;
     min-height: 700px;
     overflow-y: scroll;
+    max-height:700px;
 }
 
 .selection-insidepaneltext{
@@ -75,13 +76,15 @@
     margin-right: 100px;
 }
 
-    .selection-insidepanel-window:hover{
+
+    .selection-insidepanel-window img{
+        border-radius:15px;
+    }
+
+    .selection-insidepanel-window:hover {
         transform: scale(1.2)
     }
 
-    .selection-insidepanel-window img{
-        border-radius:12px;
-    }
 
     #footer {
         width: 100%;
@@ -126,15 +129,15 @@
 
 }
 
-.menuh h6 {
-    font: 18px arial;
-    text-align:left;
-}
+    .menuh h6 {
+        font: 18px arial;
+        text-align: left;
+    }
 
-.menuh h5{
-    font:bold;
-    text-align:center;
-}
+    .menuh h5{
+        font:bold;
+        text-align:center;
+    }
 
 /*menu*/
 
@@ -227,39 +230,66 @@
 /*Oyunlar*/
 
 
-.masa_oyunlari_inside-a {
-    margin: 50px 50px;
+.masaoyunlari_content {
     border-radius: 25px;
-    background-color: #6C6C6C;
-    height:750px;
-    float:right;
+    background-color: #383838;
+    max-height:700px;
+    margin: 50px 50px;
+    min-height: 700px;
+    padding:12px;
+    
 }
-    .masa_oyunlari_inside-a img {
-        margin-left: 25px;
-        border-radius: 50px;
-        height: 700px;
-        align-content: center;
-        padding-top: 20px;
+
+    .masaoyunlari_content img {
+        border-radius: 12px;
+        height:688px;
+        width:500px;
     }
 
-    
 
-.masa_oyunlari_inside-b{
-    padding-right:1px;
-    background-color:white;
+.masaoyunlari_content_inside{
+    float:right;
+    max-width:850px;
+    max-height:700px;
+    overflow-y:scroll;
 }
 
-    .masa_oyunlari_inside-b h3 {
-        color: #101010;
-        text-align:center;
-        font: bold;
-        float: right;
-        }
 
-    .masa_oyunlari_inside-b h4 {
-        color: #bebebe;
-        font: arial;
-        float: right;
-     }
 
-    
+    .masaoyunlari_content_inside h3 {
+        color: #823333;
+        border-radius: 12px;
+        font-size: 25px;
+        float: right;
+        background-color: darkgray;
+        text-align: center;
+        width: 795px;
+        padding: 5px;
+    }
+
+    .masaoyunlari_content_inside h5 ,ol,ul{
+        color: white;
+        border-radius: 12px;
+        float:right;
+        background-color: darkgray;
+        text-align: left;
+        width: 795px;
+        padding:5px;
+        
+    }
+
+    .masaoyunlari_content_inside h4 {
+        color: #823333;
+        text-align: left;
+        padding-left:5px;
+    }
+
+    .masaoyunlari_content_inside-noscroll {
+        overflow-y: unset;
+    }
+
+.masaoyunlari_all{
+    background-color:gray;
+    float:left;
+    width:300px;
+}
