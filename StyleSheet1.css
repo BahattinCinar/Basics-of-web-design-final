@@ -82,7 +82,7 @@
     }
 
     .selection-insidepanel-window:hover {
-        transform: scale(1.2)
+        transform: scale(1.2);
     }
 
 
@@ -233,9 +233,8 @@
 .masaoyunlari_content {
     border-radius: 25px;
     background-color: #383838;
-    max-height:700px;
+    height:700px;
     margin: 50px 50px;
-    min-height: 700px;
     padding:12px;
     
 }
@@ -288,8 +287,121 @@
         overflow-y: unset;
     }
 
-.masaoyunlari_all{
-    background-color:gray;
-    float:left;
-    width:300px;
+.masaoyunlari_all {
+    background-color: gray;
+    float: left;
+    max-width: 300px;
+    border-radius: 12px;
+    padding: 5px;
+    text-align: center;
+    margin-left: 120px;
+    float: left;
+    margin-top:100px;
+    transition:0.5s;
+    margin-bottom:50px;
 }
+
+    .masaoyunlari_all:hover {
+        transform: scale(1.2);
+    }
+
+    .masaoyunlari_all img {
+        border-radius: 12px;
+        width: 300px;
+        height: 300px;
+    }
+
+
+/*Video oyunlari*/
+
+
+.videoyun {
+    border-radius: 25px;
+    background-color: white;
+    height: 700px;
+    margin: 50px 50px;
+    padding: 12px;
+    overflow-y:scroll;
+}
+
+    .videoyun_noscrol {
+        overflow-y: unset;
+    }
+
+
+    #videoyun_inside_left {
+        width: 1200px;
+        height: 150px;
+        background-color: lightgray;
+        border-radius: 25px;
+        padding: 15px;
+        margin-left: 5px;
+    }
+
+        #videoyun_inside_left h4 {
+            text-align: left;
+            float: right;
+            width: 1000px;
+            margin-top: 5px;
+        }
+
+        #videoyun_inside_left img {
+            border-radius: 12px;
+            padding: 5px;
+            width: 150px;
+            height: 145px;
+        }
+
+
+
+
+
+    .videoyun_inside_left {
+        width: 1200px;
+        height: 150px;
+        background-color: lightgray;
+        border-radius: 25px;
+        padding: 15px;
+        margin-left: 5px;
+        margin-top:50px;
+    }
+
+        .videoyun_inside_left h4 {
+            text-align: left;
+            float: right;
+            width: 900px;
+            margin-top: 5px;
+        }
+
+        .videoyun_inside_left img {
+            border-radius: 12px;
+            padding: 5px;
+            width: 290px;
+            height: 145px;
+        }
+
+
+    .videoyun_inside_right {
+        width: 1200px;
+        height: 150px;
+        background-color: lightgray;
+        border-radius: 25px;
+        padding: 15px;
+        margin-left: 125px;
+        text-align: right;
+        margin-top:50px;
+    }
+
+        .videoyun_inside_right img {
+            border-radius: 12px;
+            padding: 5px;
+            width: 290px;
+            height: 145px;
+        }
+
+        .videoyun_inside_right h4 {
+            text-align: left;
+            float: left;
+            width: 900px;
+            margin-top: 5px;
+        }
