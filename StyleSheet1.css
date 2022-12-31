@@ -397,6 +397,13 @@
             padding: 5px;
             width: 290px;
             height: 145px;
+
+        }
+
+        .videoyun_inside_right img:hover{
+            transform:scale(2.5);
+            z-index:-1;
+            padding-right:150px;
         }
 
         .videoyun_inside_right h4 {
