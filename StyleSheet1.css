@@ -400,15 +400,92 @@
 
         }
 
-        .videoyun_inside_right img:hover{
-            transform:scale(2.5);
-            z-index:-1;
-            padding-right:150px;
-        }
-
         .videoyun_inside_right h4 {
             text-align: left;
             float: left;
             width: 900px;
             margin-top: 5px;
         }
+
+/*Mekan Oyunlari*/
+
+
+.mekan {
+    border-radius: 25px;
+    background-color: white;
+    height: 700px;
+    margin: 50px 50px;
+    padding: 12px;
+    overflow-y: scroll;
+}
+
+.mekan_noscroll{
+    overflow:unset;
+}
+
+.mekan_text {
+    margin: 25px 25px;
+    border-radius: 25px;
+    width: 96%;
+    height:100%;
+    background-color: lightgray;
+}
+
+    .mekan_text h4 {
+        text-align: left;
+        padding-left: 12px;
+        padding-top: 5px;
+        color: red;
+        font: bold, arial;
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .mekan_text_list ol, ul {
+        width: 94%;
+        padding: 25px;
+        color: black;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 20px;
+        background-color: lightgray;
+        border-radius: 25px;
+    }
+
+    .mekan_text_list h4 {
+        text-align: left;
+        padding-left: 12px;
+        padding-top: 5px;
+        color: red;
+        font: bold, arial;
+        font-size: 30px;
+        width: 300px;
+        border-radius: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: lightgray;
+    }
+
+    .mekan_text_list h5{
+        font:bolder;
+    }
+
+    .mekan_text h6{
+        text-align:left;
+        color:black;
+        font:arial;
+        font-size:23px;
+        width:75%;
+        height:200px;
+        float:right;
+        margin-top:0px;
+        padding-right:12px;
+    }
+
+    .mekan_text img{
+        text-align:left;
+        padding:5px;
+        border-radius:25px;
+        height:150px;
+        width:300px;
+    }
