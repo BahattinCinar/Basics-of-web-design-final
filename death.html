@@ -56,7 +56,7 @@
         <div id="section">
             <div class="videoyun videoyun_noscrol">
                 <div id="videoyun_inside_left">
-                    <img src="./photos/death.jpg"/>
+                    <img src="./photos/death.jpg" />
                     <h4>
                         Death Stranding, Kojima Productions tarafından geliştirilen ve Sony Interactive Entertainment tarafından PlayStation 4 oyun konsolu için 8 Kasım 2019 tarihinde yayınlanan, Microsoft Windows platformunda ise 14 Temmuz 2020 tarihinde yayınlanan video oyunudur.
                         <br />
@@ -64,22 +64,44 @@
                     </h4>
                 </div>
                 <div class="videoyun_inside_right">
-                    <img src="./photos/death2.jpg" />
+                    <img src="./photos/death2.jpg" onclick="openFullImg(this.src)"/>
                     <h4 style="margin-top:-5px;">
                         Hideo Kojima oyunun aksiyon türüne benzer bir türde olduğunu fakat yeni ve değişik elementleri içerdiğini belirtti. Oyunun ana temalarından bazılarının Kōbō Abe'in kısa hikâyelerinden esinlenerek oluştuğunu açıkladı. Bu oyun Kojima ve aktör Norman Reedus'ın ikinci çalışmasıdır, ilki 2015'te iptal edilen Silent Hills'dir. Kojima'ya göre oyun fragmanının kilit unsurlarından biri yaşam ve ölümün bağlantısı fikridir. Fragmanda ayrıca kıyıya vurmuş ölü canlılar teması ve görselleri hakimdir. 1 Aralık 2016 tarihinde düzenlenen 2016 The Game Ödülleri'nde yayınlanan fragmanda Mads Mikkelsen'in oyunda yer aldığı, daha önceden Kojima ve Reedus ile birlikte Silent Hills projesinde yer almış film yönetmeni Guillermo del Toro'nun da oyunda küçük bir role sahip olduğu açıklandı.
                         <br />
                         Oyunun PC versiyonunun olma olasılığı konusu ilk kez Aralık 2015'te Medium'un yayınladığı Soru&Cevap oturumunda bahsedildi ve Kasım 2019'da Windows'ta yayınlanacağı kesinleşti.
                     </h4>
                 </div>
+                <div class="full-img " id="FullImgBox">
+                    <img src="./photos/death2.jpg" id="FullImg" />
+                    <span onclick="closeFullImg()">x</span>
+                </div>
             </div>
             <div id="sidenav" class="sidenav">
-                <a href="#" id="about">Hakkinda</a><br />
-                <a href="#" id="contact">Iletisim</a><br />
+                <a href="hakkimizda.html" id="about">Hakkinda</a><br />
+                <a href="mailto:bahattin614@gmail.com" id="contact">Iletisim</a><br />
             </div>
         </div>
         <div id="footer">
 
         </div>
     </div>
+    <script>
+        var FullImgBox = document.getElementById("FullImgBox");
+        var FullImg = document.getElementById("FullImg");
+
+
+        function openFullImg(pic) {
+
+            FullImgBox.style.display = "flex";
+            FullImg.src = pic;
+
+        }
+
+        function closeFullImg() {
+
+            FullImgBox.style.display = "none";
+
+        }
+    </script>
 </body>
 </html>

@@ -63,41 +63,63 @@
                     </h4>
                 </div>
                 <div class="videoyun_inside_right">
-                    <img src="./photos/elden2.jpg" />
+                    <img src="./photos/elden2.jpg" onclick="openFullImg(this.src)"/>
                     <h4>
                         Elden Ring, E3 2019 fuarında duyurulan ve geliştirmesi hala devam etmekte olan bir aksiyon-rol yapma oyunudur. Oyun, FromSoftware tarafından geliştirilmektedir ve yayımcılığını Bandai Namco Entertainment üstlenmektedir; Microsoft Windows, PlayStation 4 ve Xbox One platformlarında çıkış yapacaktır. Oyunun yönetmenliğini Souls serisi, Bloodborne ve Sekiro: Shadows Die Twice gibi oyunlar ile tanınan Hidetaka Miyazaki üstlenmektedir, oyunun dünyasını ise özellikle Buz ve Ateşin Şarkısı kitabı ile tanınan fantezi yazarı George R. R. Martin yaratmıştır.
                     </h4>
                 </div>
                 <div class="videoyun_inside_left">
-                    <img src="./photos/elden3.jpg" />
+                    <img src="./photos/elden3.jpg" onclick="openFullImg(this.src)"/>
                     <h4>
                         George R. R. Martin'in çalışmalarının büyük bir hayranı olan Hidetaka Miyazaki, Martin ile iletişime geçmiş ve oyunun dünyasını oluşturması için kendisine kreatif özgürlük tanımıştır. Miyazaki, IGN için verdiği bir röportajda, oyunun isminin anlamının sorulması üzerine "Yüzüklerin Efendisi en klasik fantezi romanı, bundan dolayı Elden Ring bu romandan belli bir miktarda esinlenilerek ama tamamen aynısı olmayacak şekilde yapıldı." dedi ve Elden Ring ismindeki "Ring" kelimesinin aslında parmağa takılan bir yüzük anlamına gelmediğini, "yuvarlak" anlamına geldiğini belirtti.
                     </h4>
                 </div>
                 <div class="videoyun_inside_right">
-                    <img src="./photos/elden4.jpg" />
+                    <img src="./photos/elden4.jpg" onclick="openFullImg(this.src)"/>
                     <h4>
                         Elden Ring'in geliştirilmesine 2017'nin başlarında, Dark Souls III için geliştirilen The Ringed City indirilebilir içeriğinin yayımlanmasının hemen ardından başlandı. Diğer Souls oyunlarında olduğu gibi, Elden Ring sabit bir ana karakter ile oynamak yerine oyunculara kendi ana karakterlerini yaratabilme özelliğini tanıyacak. Oyun, her ne kadar ana mantığını Souls serisinden alacak olsa da, diğer Souls oyunlarının aksine, oyuncu olmayan karakterlerin (Npc) çok fazla bulunmadığı, zindan benzeri harabeler içeren daha büyük bir açık dünya, at sürme ve at üstünde savaş gibi yeni özelliklere sahip olacak.Miyazaki'ye hikâyenin kitaplaştırılma ihtimali sorulduğunda kendisi, oyuncuların oyunu oynayarak hikâyeyi öğrenmelerini ve deneyim etmelerini tercih ettiğini söylemiştir.[6] Oyunun müzikleri, daha önce de Miyazaki tarafından geliştirilen oyunların birçoğunda bestecilik yapan Yuka Kitamura tarafından bestelenmektedir.
                     </h4>
                 </div>
-                <div class="videoyun_inside_left" style="overflow-y:scroll; float:left; width:97%;">
-                    <img onclick="zoom()" src="./photos/elden5.jpg" />
-                    <img onclick="zoom()" src="./photos/elden6.jpg" />
-                    <img onclick="zoom()" src="./photos/elden7.jpg" />
-                    <img onclick="zoom()" src="./photos/elden8.jpg" />
-                    <img onclick="zoom()" src="./photos/elden9.jpg" />
-                    <img onclick="zoom()" src="./photos/eldenA.jpg" />
-                    <img onclick="zoom()" src="./photos/eldenB.jpg" />
+                <div class="full-img " id="FullImgBox">
+                    <img src="./photos/elden5.jpg" id="FullImg" />
+                    <span onclick="closeFullImg()">x</span>
+                </div>
+                <div class="img-gallery">
+                    <img src="./photos/elden5.jpg" onclick="openFullImg(this.src)" />
+                    <img src="./photos/elden6.jpg" onclick="openFullImg(this.src)" />
+                    <img src="./photos/elden7.jpg" onclick="openFullImg(this.src)" />
+                    <img src="./photos/elden8.jpg" onclick="openFullImg(this.src)" />
+                    <img src="./photos/elden9.jpg" onclick="openFullImg(this.src)" />
+                    <img src="./photos/eldenA.jpg" onclick="openFullImg(this.src)" />
+                    <img src="./photos/eldenB.jpg" onclick="openFullImg(this.src)" />
                 </div>
             </div>
             <div id="sidenav" class="sidenav">
-                <a href="#" id="about">Hakkinda</a><br />
-                <a href="#" id="contact">Iletisim</a><br />
+                <a href="hakkimizda.html" id="about">Hakkinda</a><br />
+                <a href="mailto:bahattin614@gmail.com" id="contact">Iletisim</a><br />
             </div>
         </div>
         <div id="footer">
 
         </div>
     </div>
+    <script>
+        var FullImgBox = document.getElementById("FullImgBox");
+        var FullImg = document.getElementById("FullImg");
+
+
+        function openFullImg(pic) {
+
+            FullImgBox.style.display = "flex";
+            FullImg.src = pic;
+
+        }
+
+        function closeFullImg() {
+
+            FullImgBox.style.display = "none";
+
+        }
+    </script>
 </body>
 </html>

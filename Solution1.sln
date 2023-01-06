@@ -10,6 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", 
 		death.html = death.html
 		dis_oyun.html = dis_oyun.html
 		eldenring.html = eldenring.html
+		ev.html = ev.html
 		godofwar.html = godofwar.html
 		guess.html = guess.html
 		ic_mekan.html = ic_mekan.html
@@ -32,6 +33,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", 
 		tabu.html = tabu.html
 		ton.html = ton.html
 		video_oyunlari.html = video_oyunlari.html
+		vikingsatranc.html = vikingsatranc.html
 		witcher3.html = witcher3.html
 	EndProjectSection
 EndProject

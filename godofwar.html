@@ -62,7 +62,7 @@
                     </h4>
                 </div>
                 <div class="videoyun_inside_right">
-                    <img src="./photos/god2.jpg"/>
+                    <img src="./photos/god2.jpg" onclick="openFullImg(this.src)"/>
                     <h4 style="margin-top:-5px;">
                         Bu eksiksiz koleksiyon listeleri kupa almak veya ana alanlarda olmayan koleksiyonları bulmak için kullanışlıdır.<br />
                         Odin'in Kuzgunları - 51 Odin'in Kuzgunları baltanızla yok etmeniz gereken yeşil kuşlardır.<br />
@@ -74,23 +74,44 @@
                     </h4>
                 </div>
                 <div class="videoyun_inside_left">
-                    <img src="./photos/god3.jpg" />
+                    <img src="./photos/god3.jpg" onclick="openFullImg(this.src)"/>
                     <h4>
                         God of War'da oyun içerisinde kullanabileceğiniz 2 adet silah verilmiştir. Bunlardan biri Leviathan baltası, diğeri ise önceki oyunlardan tanıdığımız Blade of chaos'tur, ayrıcalıklı olarak oyunda çıplak elde mücadele içerisinde kullanılabilmektedir.
                         <br />
                         God of War'da oyun içerisinde kullanabilen 2 adet silah vardır. Bunlardan biri Leviathan baltası, diğeri ise önceki oyunlarda da yer alan Blades of Chaos'tur. Ayrıcalıklı olarak oyunda çıplak elde mücadele içerisinde kullanılabilmektedir.
                     </h4>
                 </div>
-
+                <div class="full-img " id="FullImgBox">
+                    <img src="./photos/god3.jpg" id="FullImg" />
+                    <span onclick="closeFullImg()">x</span>
+                </div>
             </div>
             <div id="sidenav" class="sidenav">
-                <a href="#" id="about">Hakkinda</a><br />
-                <a href="#" id="contact">Iletisim</a><br />
+                <a href="hakkimizda.html" id="about">Hakkinda</a><br />
+                <a href="mailto:bahattin614@gmail.com" id="contact">Iletisim</a><br />
             </div>
         </div>
         <div id="footer">
 
         </div>
     </div>
+    <script>
+        var FullImgBox = document.getElementById("FullImgBox");
+        var FullImg = document.getElementById("FullImg");
+
+
+        function openFullImg(pic) {
+
+            FullImgBox.style.display = "flex";
+            FullImg.src = pic;
+
+        }
+
+        function closeFullImg() {
+
+            FullImgBox.style.display = "none";
+
+        }
+    </script>
 </body>
 </html>

@@ -56,7 +56,7 @@
         <div id="section">
             <div class="videoyun videoyun_noscrol">
                 <div id="videoyun_inside_left">
-                    <img src="./photos/no_man.jpg"/>
+                    <img src="./photos/no_man.jpg" />
                     <h4>
                         No Man's Sky (Tarafsız Gökyüzü), İngiliz aksiyon-macera tarzı video oyunu. Oyun stüdyosu Hello Games tarafından geliştirilen ve 9 Ağustos 2016'da PlayStation 4'te, 12 Ağustos 2016'da Windows'ta ve 24 Temmuz 2018'de Xbox One'da yayınlanmıştır.
                         <br />
@@ -64,25 +64,47 @@
                     </h4>
                 </div>
                 <div class="videoyun_inside_right">
-                    <img src="./photos/no_man2.jpg" />
+                    <img src="./photos/no_man2.jpg" onclick="openFullImg(this.src)"/>
                     <h4>
                         Oyun açık bir uzaydan oluşur. Uzayda değişik gezegenler ve gezegenlerin her birinde değişik canlılar vardır. Oyun haritasının tamamını keşfetmenin milyarlarca yıl aldığı iddia edilmektedir.[kaynak belirtilmeli] Oyun çevrimiçi oynanabilir.
                     </h4>
                 </div>
+                <div class="full-img " id="FullImgBox">
+                    <img src="./photos/no_man5.jpg" id="FullImg" />
+                    <span onclick="closeFullImg()">x</span>
+                </div>
                 <div class="videoyun_inside_left">
-                    <img style="margin-left:75px;" src="./photos/no_man3.jpg"/>
-                    <img style="margin-left:75px;" src="./photos/no_man4.jpg" />
-                    <img style="margin-left:75px;" src="./photos/no_man5.jpg" />
+                    <img style="margin-left:75px;" src="./photos/no_man3.jpg" onclick="openFullImg(this.src)"/>
+                    <img style="margin-left:75px;" src="./photos/no_man4.jpg" onclick="openFullImg(this.src)"/>
+                    <img style="margin-left:75px;" src="./photos/no_man5.jpg" onclick="openFullImg(this.src)"/>
                 </div>
             </div>
             <div id="sidenav" class="sidenav">
-                <a href="#" id="about">Hakkinda</a><br />
-                <a href="#" id="contact">Iletisim</a><br />
+                <a href="hakkimizda.html" id="about">Hakkinda</a><br />
+                <a href="mailto:bahattin614@gmail.com" id="contact">Iletisim</a><br />
             </div>
         </div>
         <div id="footer">
 
         </div>
     </div>
+    <script>
+        var FullImgBox = document.getElementById("FullImgBox");
+        var FullImg = document.getElementById("FullImg");
+
+
+        function openFullImg(pic) {
+
+            FullImgBox.style.display = "flex";
+            FullImg.src = pic;
+
+        }
+
+        function closeFullImg() {
+
+            FullImgBox.style.display = "none";
+
+        }
+    </script>
 </body>
 </html>
